@@ -1,0 +1,39 @@
+/* styling för webb - bli inte arg, jag vet att man kör mobile first egentligen.. men jag kommer inte igång så jag måste sänka tröseln, hehe */
+
+nav {
+    background-color: red;
+    position: sticky;
+
+    .heading {
+        padding-top: 20px;
+    }
+
+    .nav-list {
+        li{
+            list-style: none;
+            display: inline;
+            padding-left: 5%;
+            padding-right: 3%;
+            float: right;
+     /* varför hamnar listan utanför nav? */
+        }
+    }
+}
+
+.first-page {
+    padding-top: 10px;
+    h1{
+        font-size: 9rem;
+        margin-left: 12%;
+        text-transform: uppercase;
+    }
+    .basic-info{
+        margin-left: 45%;
+        margin-top: -8%;
+    }
+}
+
+
+
+
+
