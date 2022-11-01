@@ -1,4 +1,222 @@
-/* styling för webb - bli inte arg, jag vet att man kör mobile first egentligen.. men jag kommer inte igång så jag måste sänka tröseln, hehe */
+/* Mobil styling */
+
+/* Hamburgermeny */ 
+body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    min-height: 200vh;
+    font-family: 'Cabin', Sans-serif;
+  }
+  
+  .overlay{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .35s, visibility .35s, height .35s;
+      overflow: hidden;
+      background: black;
+      z-index: -1;
+  }
+  
+  .main-menu {
+    display: block;
+    height: 100px;
+    width: 100%;
+    background: white;
+    margin: 0px;  
+    z-index: 9;
+  }
+  
+  .main-menu ul {
+    max-width: 800px;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 9;
+  }
+  
+  .main-menu li {
+    list-style-type: none;
+    font-size: 1rem;
+  }
+  
+  .main-menu a {
+    color: black;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  .main-menu a:hover {
+    text-decoration: underline;
+  }
+  
+  #hamburger-input{
+    display: none;
+  }
+  
+  #hamburger-menu {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 40px;
+      height: 40px;
+      display: none;
+      border: none;
+      padding: 0px;
+      margin: 0px;
+      font-family: 'Cabin', Sans-serif;
+      background: linear-gradient(
+        to bottom, 
+        black, black 20%, 
+        rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 40%, 
+        black 40%, black 60%, 
+        rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 80%, 
+        black 80%, black 100%
+      );
+
+      /* Måste finnas ett enklare sätt att färgsätta menyn?  */
+  }
+  
+  #hamburger-menu #sidebar-menu {
+      visibility: hidden;
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 200px;
+      height: 100%;
+      background-color: #ffffff;
+      transition: 0.3s;
+      padding: 0px 10px;
+      box-sizing: border-box;
+  }
+  
+  #hamburger-menu h3 {
+    color: black;
+    font-size: 2rem;
+  }
+  
+  #hamburger-menu ul {
+    padding-left: 0px;
+  }
+  
+  #hamburger-menu li {
+    list-style-type: none;
+    line-height: 3rem;
+  }
+  
+  #hamburger-menu a {
+    color: black;
+    font-size: 1.3rem;
+    text-decoration: none;
+  }
+  
+  #hamburger-menu a:hover {
+    text-decoration: underline;
+  }
+  
+  #hamburger-input:checked + #hamburger-menu #sidebar-menu {
+      visibility: visible;
+      left: 0;
+  }
+  #hamburger-input:checked ~ .overlay{
+     visibility: visible;
+    opacity: 0.4;
+  }
+
+  /* First page content */
+
+  .first-page{
+    padding-top: 200px;
+    height: 100vh;
+    h1{
+        font-size: 3.5rem;
+        margin-left: 6%;
+        text-transform: uppercase;
+    }
+    .basic-info{
+        margin-left: 35%;
+        margin-top: -10%;
+        font-size: 1rem;
+    }
+  }
+
+  .about-me{
+      height: 100vh;
+      margin-inline: auto;
+      width: 90%;
+      h3{
+          font-size: 1.5rem;
+          text-transform: uppercase;
+          text-decoration: underline;
+      }
+      p{
+          font-size: 0.9rem;
+          line-height: 140%;
+      }
+
+  }
+
+  .experience{
+    height: 100vh;
+    margin-inline: auto;
+    width: 90%;
+    h3{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+    }
+    
+    .medieinstitutet{
+        list-style: none;
+        margin-top: -15px;
+        line-height: 130%;
+        margin-left: -39px;
+        .school-name{
+            font-size: 1rem;
+        }
+        .time-period{
+            font-size: 1rem;
+            font-style: italic;
+        }
+        .program{
+            font-size: 1rem;
+        }
+    }
+
+    .skills-1{
+        margin-left: -39px;
+        margin-top: -10px;
+        font-size: 0.9rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 1.5em;
+        list-style: none;
+        
+    }
+  
+  
+  /* Styling för webb */ 
+
+  @media screen and (max-width: 750px) {
+    .main-menu {
+      display: none;
+    }
+    #hamburger-menu {
+      display: inline;
+    }
+  }
+
 
 nav {
     background-color: red;
@@ -20,18 +238,7 @@ nav {
     }
 }
 
-.first-page {
-    padding-top: 10px;
-    h1{
-        font-size: 9rem;
-        margin-left: 12%;
-        text-transform: uppercase;
-    }
-    .basic-info{
-        margin-left: 45%;
-        margin-top: -8%;
-    }
-}
+
 
 
 

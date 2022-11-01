@@ -8,25 +8,34 @@
     <title>Julia Lundberg</title>
 </head>
 <body>
-    <!--Header and navigation-->
-    <header>
-        <nav>
-            <p class="heading">@julialundbergish</p>
-                <ul class="nav-list">
-                    <li>About</li>
-                    <li>Experience</li>
-                    <li>Contact</li>
-                </ul>
+
+    <nav class="main-menu">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Experience</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <input type="checkbox" id="hamburger-input" class="burger-shower">
+      <label id="hamburger-menu" for="hamburger-input">
+        <nav id="sidebar-menu">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </nav>
-    </header>
-        <!--Main information-->
+      </label>
+      <div class="overlay"></div>
     <main>
         <section class="first-page">
             <h1>Julia <br> Lundberg</h1>
             <p class="basic-info">Digital Designer & Developer <br> from Västerås.</p>
             <img src="" alt="downward pointing arrow">
         </section>
-        <section>
+        <section class="about-me">
             <h3>About me</h3>
             <p>My name is Julia. I'm a digital designer and aspiring developer currently 
                 based in Västerås with a passion for creating cool things and solving user 
@@ -35,30 +44,30 @@
                  graphic design, interaction design, web design with front-end development and AR-design. 
                  I also completed a design internship at Oh My in Skellefteå during this time. 
                  I’m currently a student at Medieinstitutet where I am studying to become a front end
-                  developer.<br>The cross-section between art, humanity and technology is what makes my heart flutter. What about you?
-            </p>
+                  developer.</p>
+            <p>The cross-section between art, humanity and technology is what makes my heart flutter. What about you?</p>
             <img src="" alt="girl with long hair and black shirt smiling">
         </section>
-        <section>
+        <section class="experience">
             <h3>Experience</h3>
             <h5>Education</h5>
-            <ul>
-                <li>Medieinstitutet</li>
-                <li>10/22 - Present</li>
-                <li>Front end development</li>
+            <ul class="medieinstitutet">
+                <li class="school-name">Medieinstitutet</li>
+                <li class="time-period">10/2022 - Present</li>
+                <li class="program">Front end developer</li>
             </ul>
-            <ul>
+            <ul class="skills-1">
                 <li>HTML & CSS</li>
                 <li>Javascript</li>
                 <li>API</li>
                 <li>UX & Usability</li>
             </ul>
-            <ul>
+            <ul class="hkr">
                 <li>Högskolan Kristianstad</li>
                 <li>08/2019 - 06/2022</li>
                 <li>Bachelor of Science in Informatics</li>
             </ul>
-            <ul>
+            <ul class="skills-2">
                 <li>UX & UI</li>
                 <li>Interaction Design</li>
                 <li>HCI</li>
