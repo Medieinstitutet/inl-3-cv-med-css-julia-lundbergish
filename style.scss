@@ -6,7 +6,7 @@ body {
     margin: 0px;
     font-size: 20px;
     min-height: 200vh;
-    font-family: 'Cabin', Sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
   
   .overlay{
@@ -67,8 +67,8 @@ body {
       position: fixed;
       top: 20px;
       left: 20px;
-      width: 40px;
-      height: 40px;
+      width: 35px;
+      height: 35px;
       display: none;
       border: none;
       padding: 0px;
@@ -83,7 +83,7 @@ body {
         black 80%, black 100%
       );
 
-      /* Måste finnas ett enklare sätt att färgsätta menyn?  */
+      /* Måste finnas ett enklare sätt att färgsätta menyn? */
   }
   
   #hamburger-menu #sidebar-menu {
@@ -111,16 +111,21 @@ body {
   #hamburger-menu li {
     list-style-type: none;
     line-height: 3rem;
+    padding-bottom: 6%;
   }
   
   #hamburger-menu a {
     color: black;
     font-size: 1.3rem;
     text-decoration: none;
+    border: 1px solid black;
+    padding: 2% 5%;
+    border-radius: 30px;
   }
   
   #hamburger-menu a:hover {
-    text-decoration: underline;
+    background-color: black;
+    color: white;
   }
   
   #hamburger-input:checked + #hamburger-menu #sidebar-menu {
@@ -129,30 +134,30 @@ body {
   }
   #hamburger-input:checked ~ .overlay{
      visibility: visible;
-    opacity: 0.4;
+     opacity: 0.4;
   }
 
   /* First page content */
 
   .first-page{
     padding-top: 200px;
-    height: 100vh;
     h1{
         font-size: 3.5rem;
         margin-left: 6%;
         text-transform: uppercase;
     }
     .basic-info{
-        margin-left: 35%;
+        margin-left: 30%;
         margin-top: -10%;
-        font-size: 1rem;
+        font-size: 0.9rem;
+        text-transform: uppercase;
     }
   }
 
   .about-me{
-      height: 100vh;
       margin-inline: auto;
       width: 90%;
+      margin-top: 290px;
       h3{
           font-size: 1.5rem;
           text-transform: uppercase;
@@ -166,7 +171,7 @@ body {
   }
 
   .experience{
-    height: 100vh;
+    margin-top: 100px;
     margin-inline: auto;
     width: 90%;
     h3{
@@ -193,16 +198,79 @@ body {
         }
     }
 
-    .skills-1{
+    .skills-1, .skills-2{
         margin-left: -39px;
         margin-top: -10px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 1.5em;
+        list-style: none; 
+    }
+
+    .hkr{
+        list-style: none;
+        margin-top: 35px;
+        line-height: 130%;
+        margin-left: -39px;
+        .school-name{
+            font-size: 1rem;
+        }
+        .time-period{
+            font-size: 1rem;
+            font-style: italic;
+        }
+        .program{
+            font-size: 1rem;
+        }
+    }
+
+    .fa-solid{
+        margin-right: 6px;
+    }
+
+    .progressbar-ux{
+        p{ 
+            font-size: 0.9rem; 
+        }
+        accent-color: grey;
+    }
+
+    .progressbar-html{
+        p{
+            font-size: 0.9rem;
+        }
+        accent-color: grey;
+    }
+
+    .progressbar-css{
+        p{
+            font-size: 0.9rem;
+        }
+        accent-color: grey;
+    }
+
+    .progressbar-javascript{
+        p{
+            font-size: 0.9rem;
+        }
+        accent-color: grey;
+    }
+
+    .languages{
+        font-size: 1rem;
+        list-style: none;
+        margin-top: 35px;
+        line-height: 130%;
+        margin-left: -39px;
+        line-height: 150%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 20px;
         row-gap: 1.5em;
-        list-style: none;
-        
+        .level{
+            font-weight: bold;
+        }
     }
   
   
