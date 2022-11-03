@@ -24,48 +24,6 @@ body {
   z-index: -1;
 }
 
-.main-menu {
-  display: block;
-  height: 100px;
-  width: 100%;
-  background: white;
-  margin: 0px;
-  z-index: 9;
-}
-
-.main-menu ul {
-  max-width: 800px;
-  width: 100%;
-  height: 100%;
-  margin: 0px auto;
-  padding: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 9;
-}
-
-.main-menu li {
-  list-style-type: none;
-  font-size: 1rem;
-}
-
-.main-menu a {
-  color: black;
-  font-size: 1rem;
-  text-decoration: none;
-}
-
-.main-menu a:hover {
-  text-decoration: underline;
-}
-
 #hamburger-input {
   display: none;
 }
@@ -75,7 +33,7 @@ body {
   top: 20px;
   left: 20px;
   width: 35px;
-  height: 35px;
+  height: 32px;
   display: none;
   border: none;
   padding: 0px;
@@ -156,8 +114,10 @@ body {
   margin-top: -10%;
   font-size: 0.9rem;
   text-transform: uppercase;
+  position: relative;
 }
 
+/* About me */
 .about-me {
   margin-inline: auto;
   width: 90%;
@@ -175,6 +135,7 @@ body {
   line-height: 140%;
 }
 
+/* Experience */
 .experience {
   margin-top: 100px;
   margin-inline: auto;
@@ -244,7 +205,7 @@ body {
 }
 
 .progressbar-ux {
-  accent-color: grey;
+  accent-color: #454545;
 }
 
 .progressbar-ux p {
@@ -252,7 +213,7 @@ body {
 }
 
 .progressbar-html {
-  accent-color: grey;
+  accent-color: #454545;
 }
 
 .progressbar-html p {
@@ -260,7 +221,7 @@ body {
 }
 
 .progressbar-css {
-  accent-color: grey;
+  accent-color: #454545;
 }
 
 .progressbar-css p {
@@ -268,7 +229,7 @@ body {
 }
 
 .progressbar-javascript {
-  accent-color: grey;
+  accent-color: #454545;
 }
 
 .progressbar-javascript p {
@@ -295,7 +256,6 @@ body {
   font-weight: bold;
 }
 
-/* Styling för webb */
 @media screen and (max-width: 750px) {
   .main-menu {
     display: none;
@@ -305,22 +265,97 @@ body {
   }
 }
 
-nav {
-  background-color: red;
-  position: -webkit-sticky;
-  position: sticky;
-}
-
-nav .heading {
-  padding-top: 20px;
-}
-
-nav .nav-list li {
-  list-style: none;
-  display: inline;
-  padding-left: 5%;
-  padding-right: 3%;
-  float: right;
-  /* varför hamnar listan utanför nav? */
+/* Styling för webb */
+@media screen and (min-width: 1024px) {
+  .main-menu {
+    display: block;
+    height: 100px;
+    width: 100%;
+    background: white;
+    margin: 0px;
+    z-index: 9;
+  }
+  .main-menu ul {
+    max-width: 800px;
+    width: 35%;
+    height: 100%;
+    margin-top: 0;
+    margin-left: auto;
+    padding: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 9;
+  }
+  .main-menu li {
+    list-style-type: none;
+    font-size: 1rem;
+  }
+  .main-menu a {
+    color: black;
+    font-size: 1rem;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 5px 20px;
+    border-radius: 30px;
+  }
+  .main-menu a:hover {
+    color: white;
+    background-color: black;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .first-page {
+    margin-top: -160px;
+  }
+  .first-page h1 {
+    font-size: 8rem;
+    margin-left: 6%;
+    text-transform: uppercase;
+    position: absolute;
+  }
+  .first-page .basic-info {
+    margin-left: 40%;
+    margin-top: 400px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    position: relative;
+  }
+  .flexbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+  }
+  .about-me {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .about-me h3 {
+    margin-left: 6%;
+  }
+  .about-me p {
+    width: 80%;
+    margin-left: 6%;
+    line-height: 170%;
+  }
+  .picture {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-top: 290px;
+  }
+  .skills-1, .skills-2 {
+    margin-top: -10px;
+    font-size: 0.8rem;
+    list-style: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
