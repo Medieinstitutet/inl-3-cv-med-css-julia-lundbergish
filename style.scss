@@ -299,17 +299,18 @@ body {
       }
 
       .first-page{
-        margin-top: -160px;
+        margin-top: -270px;
         h1{
-            font-size: 8rem;
-            margin-left: 6%;
+            font-size: 10rem;
+            margin-left: 12%;
             text-transform: uppercase;
             position: absolute;
+            line-height: 100%;
         }
         .basic-info{
-            margin-left: 40%;
-            margin-top: 400px;
-            font-size: 0.9rem;
+            margin-left: 55%;
+            margin-top: 450px;
+            font-size: 1.1rem;
             text-transform: uppercase;
             position: relative;
         }
@@ -323,26 +324,62 @@ body {
       .about-me{
         flex: 1;
         h3{
-            margin-left: 6%;
+            margin-left: 24%;
         }
         p{
             width: 80%;
-            margin-left: 6%;
+            margin-left: 24%;
             line-height: 170%;
         }
       }
 
       .picture{
         flex: 1;
-        margin-top: 290px;
-        
+        margin-top: 350px; 
+        margin-left: 30%;
+      }
+
+      .flexbox-2{
+        display: flex;
+        height: 100vh;
+        margin-top: 100px;
+      }
+
+      .experience{
+          margin-left: 9%;
+          flex: 1;
+          line-height: 140%;
+      }
+
+      .hkr{
+          padding-top: 50px;
+      }
+
+      .skills-1{
+          flex: 1;
+      }
+
+      .skills-2{
+          flex: 1;
       }
 
       .skills-1, .skills-2{
-      
-        margin-top: -10px;
+        margin-top: -9px;
         font-size: 0.8rem;
         list-style: none; 
+        padding-right: 50%;
+        line-height: 110%;
+        padding-top: 10px;
+    }
+
+    .skills-progress{
+        flex: 1;
+        margin-top: 158px;
+    }
+
+    .languages{
+        line-height: 50%;
+        padding-right: 50%;
     }
 
 
