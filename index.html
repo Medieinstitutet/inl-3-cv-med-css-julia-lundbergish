@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/d5373c47b8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <title>Julia Lundberg</title>
+</head>
+
+<body>
+
+    <nav class="main-menu" tabindex="0">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experiences">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <input type="checkbox" id="hamburger-input" class="burger-shower">
+    <label id="hamburger-menu" for="hamburger-input">
+        <nav id="sidebar-menu">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experiences">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </label>
+    <!-- Label borde inte omsluta navigationen ovan men jag har insett det lite sent -->
+    <div class="overlay"></div>
+    <main>
+        <section class="first-page">
+            <h1>Julia <br> Lundberg</h1>
+            <p class="basic-info">Digital Designer & Developer <br> from Västerås.</p>
+            <img class="arrow" src="images/arrow.png" alt="downward pointing arrow" height="125" width="126">
+            <img class="arrow-sm" src="images/arrow-sm.png" alt="downward pointing arrow" height="60" width="60">
+        </section>
+        <div class="flexbox">
+            <section class="about-me">
+                <a name="about"></a>
+                <h3>About me</h3>
+                <p>My name is Julia. I'm a digital designer and aspiring developer currently
+                    based in Västerås with a passion for creating cool things and solving user
+                    issues. I have a Bachelor of Science in Informatics from Högskolan Kristianstad
+                    where I studied digital design. During my time in school I've learnt about UX and UI,
+                    graphic design, interaction design, web design with front-end development and AR-design.
+                    I also completed a design internship at Oh My in Skellefteå during this time.
+                    I’m currently a student at Medieinstitutet where I am studying to become a front end
+                    developer.</p>
+                <p>The cross-section between art, humanity and technology is what makes my heart flutter. What about
+                    you?
+                </p>
+            </section>
+            <aside class="picture">
+                <img class="pic-me" src="images/me.jpg" alt="girl with long hair and black shirt smiling" width="300"
+                    height="400">
+            </aside>
+        </div>
+        <div class="flexbox-2">
+            <section class="experience">
+                <a name="experiences"></a>
+                <h3>Experience</h3>
+                <h5>Education</h5>
+                <ul class="medieinstitutet">
+                    <li class="school-name">Medieinstitutet</li>
+                    <li class="time-period">10/2022 - Present</li>
+                    <li class="program">Front end developer</li>
+                </ul>
+                <ul class="skills-1">
+                    <li><i class="fa-solid fa-arrow-right fa-2xs"></i>HTML & CSS</li>
+                    <li><i class="fa-solid fa-arrow-right fa-2xs"></i>Javascript</li>
+                    <li><i class="fa-solid fa-arrow-right fa-2xs"></i>API</li>
+                    <li><i class="fa-solid fa-arrow-right fa-2xs"></i>UX & Usability</li>
+                </ul>
+                <ul class="hkr">
+                    <li class="school-name">Högskolan Kristianstad</li>
+                    <li class="time-period">08/2019 - 06/2022</li>
+                    <li class="program">Bachelor of Science in Informatics</li>
+                </ul>
+                <ul class="skills-2">
+                    <li><i class="fa-solid fa-arrow-right fa-2xs"></i>UX & UI</li>
+                    <li><i class="fa-solid fa-arrow-right fa-2xs"></i>Interaction Design</li>
+                    <li><i class="fa-solid fa-arrow-right fa-2xs"></i>HCI</li>
+                    <li><i class="fa-solid fa-arrow-right fa-2xs"></i>Front end development</li>
+                </ul>
+            </section>
+            <aside class="skills-progress">
+                <h5>Skills</h5>
+                <div class="progressbar-ux">
+                    <p>UX & UI</p>
+                    <progress value="90" max="100"></progress>
+                </div>
+                <div class="progressbar-html">
+                    <p>HTML</p>
+                    <progress value="90" max="100"></progress>
+                </div>
+                <div class="progressbar-css">
+                    <p>CSS</p>
+                    <progress value="80" max="100"></progress>
+                </div>
+                <div class="progressbar-javascript">
+                    <p>Javascript</p>
+                    <progress value="60" max="100"></progress>
+                </div>
+                <h5>Languages</h5>
+                <ul class="languages">
+                    <li>Swedish</li>
+                    <li class="level">Native</li>
+                    <li>English</li>
+                    <li class="level">Professional</li>
+                </ul>
+            </aside>
+        </div>
+        <div class="contact">
+            <a name="contact"></a>
+            <h2>Let's get <br> in touch</h2>
+            <ul class="phone">
+                <li class="phone-title">Phone</li>
+                <li>070-8 73 48 85</li>
+            </ul>
+            <ul class="email">
+                <li class="email-title">Email</li>
+                <li>julialundberg@hotmail.se</li>
+            </ul>
+        </div>
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+        <ul class="footer-icons">
+            <li><a href="https://github.com/julia-lundbergish" title="my GitHub page"><i class="fa-brands fa-github"
+                        aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/julialundbergish/" title="my Instagram page"><i
+                        class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/julialundbergish/" title="my LinkedIn page"><i
+                        class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+        </ul>
+        <!-- Ikonerna är för små i mobilläge ur tillgänglighetsperspektiv, tar med mig det till nästa uppgift -->
+    </footer>
+</body>
+
+</html>

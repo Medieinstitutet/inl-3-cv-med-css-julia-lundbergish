@@ -1,0 +1,515 @@
+/* Mobil styling */
+
+/* Hamburgermeny */ 
+body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    min-height: 200vh;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .overlay{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .35s, visibility .35s, height .35s;
+      overflow: hidden;
+      background: black;
+      z-index: -1;
+  }
+  
+  
+  #hamburger-input{
+    display: none;
+  }
+  
+  #hamburger-menu {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 35px;
+      height: 32px;
+      display: none;
+      border: none;
+      padding: 0px;
+      margin: 0px;
+      font-family: 'Cabin', Sans-serif;
+      background: linear-gradient(
+        to bottom, 
+        black, black 20%, 
+        rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 40%, 
+        black 40%, black 60%, 
+        rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 80%, 
+        black 80%, black 100%
+      );
+
+      /* Måste finnas ett enklare sätt att färgsätta menyn? */
+  }
+  
+  #hamburger-menu #sidebar-menu {
+      visibility: hidden;
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 200px;
+      height: 100%;
+      background-color: #ffffff;
+      transition: 0.3s;
+      padding: 0px 10px;
+      box-sizing: border-box;
+  }
+  
+  #hamburger-menu h3 {
+    color: black;
+    font-size: 2rem;
+  }
+  
+  #hamburger-menu ul {
+    padding-left: 0px;
+  }
+  
+  #hamburger-menu li {
+    list-style-type: none;
+    line-height: 3rem;
+    padding-bottom: 6%;
+  }
+  
+  #hamburger-menu a {
+    color: black;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 2% 5%;
+    border-radius: 30px;
+  }
+  
+  #hamburger-menu a:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  #hamburger-input:checked + #hamburger-menu #sidebar-menu {
+      visibility: visible;
+      left: 0;
+  }
+  #hamburger-input:checked ~ .overlay{
+     visibility: visible;
+     opacity: 0.4;
+  }
+
+  /* Önskvärt i tillgänglighet vore om det var en tydlig knapp för att stänga hamburgermenyn, just nu är det inte riktigt begripligt eftersom man kan klicka på valfri plats */ 
+
+  /* First page content */
+
+  .first-page{
+    padding-top: 200px;
+    max-width: 600px;
+    h1{
+        font-size: 3.5rem;
+        margin-left: 6%;
+        text-transform: uppercase;
+    }
+    .basic-info{
+        margin-left: 30%;
+        margin-top: -10%;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        position: relative;
+    }
+    .arrow{
+        display: none;
+    }
+    .arrow-sm{
+        margin-left: 68%;
+        margin-top: 10px;
+    }
+  }
+
+  /* About me */
+
+  .about-me{
+      margin-inline: auto;
+      width: 90%;
+      margin-top: 290px;
+      h3{
+          font-size: 1.5rem;
+          text-transform: uppercase;
+          text-decoration: underline;
+      }
+      p{
+          font-size: 0.9rem;
+          line-height: 140%;
+      }
+  }
+
+  .pic-me{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+
+  /* Experience */
+
+  .experience{
+    margin-top: 100px;
+    margin-inline: auto;
+    width: 90%;
+    h3{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+    }
+    
+    .medieinstitutet{
+        list-style: none;
+        margin-top: -15px;
+        line-height: 130%;
+        margin-left: -39px;
+        .school-name{
+            font-size: 1rem;
+        }
+        .time-period{
+            font-size: 1rem;
+            font-style: italic;
+        }
+        .program{
+            font-size: 1rem;
+        }
+    }
+
+    .skills-1, .skills-2{
+        margin-left: -39px;
+        margin-top: -10px;
+        font-size: 0.8rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 1.5em;
+        list-style: none; 
+    }
+
+    .hkr{
+        list-style: none;
+        margin-top: 35px;
+        line-height: 130%;
+        margin-left: -39px;
+        .school-name{
+            font-size: 1rem;
+        }
+        .time-period{
+            font-size: 1rem;
+            font-style: italic;
+        }
+        .program{
+            font-size: 1rem;
+        }
+    }
+
+    .fa-solid{
+        margin-right: 6px;
+    }
+
+    .skills-progress{
+        margin-left: 6%;
+    }
+
+    .progressbar-ux{
+        p{ 
+            font-size: 0.9rem; 
+        }
+        accent-color: rgb(69, 69, 69);
+    }
+
+    .progressbar-html{
+        p{
+            font-size: 0.9rem;
+        }
+        accent-color: rgb(69, 69, 69);
+    }
+
+    .progressbar-css{
+        p{
+            font-size: 0.9rem;
+        }
+        accent-color: rgb(69, 69, 69);
+    }
+
+    .progressbar-javascript{
+        p{
+            font-size: 0.9rem;
+        }
+        accent-color: rgb(69, 69, 69);
+    }
+
+    .languages{
+        font-size: 1rem;
+        list-style: none;
+        margin-top: 35px;
+        line-height: 130%;
+        margin-left: -39px;
+        line-height: 150%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 1.5em;
+        .level{
+            font-weight: bold;
+        }
+    }
+
+    .contact {
+        h2{
+            text-transform: uppercase;
+            font-size: 2rem;
+            margin-left: 11%;
+            margin-top: 60px;
+        }
+        .phone, .email {
+            list-style: none;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+        .phone{
+            margin-left: 8.5%;
+        }
+        .email{
+            margin-left: 8.5%;  
+        }
+        .phone-title, .email-title{
+            text-decoration: underline;
+            font-weight: bold;
+        }
+     }
+
+     .footer{
+        padding-top: 60px;
+    }
+
+    .footer-icons{
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        list-style: none;
+        column-gap: 20px;
+        a{
+            color: black;
+        }
+    }
+
+
+  @media screen and (max-width: 1024px) {
+    .main-menu {
+      display: none;
+    }
+    #hamburger-menu {
+      display: inline;
+    }
+  }
+
+  @media screen and (min-width: 580px) {
+    .first-page .basic-info{
+        margin-top: -50px;
+    }
+}
+
+  /* Styling för webb */ 
+
+  @media screen and (min-width:1024px) {
+
+    .main-menu {
+        display: block;
+        height: 100px;
+        width: 100%;
+        background: white;
+        margin: 0px;  
+        z-index: 9;
+      }
+      
+      .main-menu ul {
+        max-width: 800px;
+        width: 35%;
+        height: 100%;
+        margin-top: 0;
+        margin-left: auto;
+        padding: 0px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 9;
+      }
+      
+      .main-menu li {
+        list-style-type: none;
+        font-size: 1rem;
+      }
+      
+      .main-menu a {
+        color: black;
+        font-size: 1rem;
+        text-decoration: none;
+        border: 1px solid black;
+        padding: 5px 20px;
+        border-radius: 30px;
+      } 
+
+      .main-menu a:hover {
+        color: white;
+        background-color: black;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .first-page{
+        margin-top: -270px;
+        max-width: 1600px;
+        h1{
+            font-size: 10rem;
+            margin-left: 12%;
+            text-transform: uppercase;
+            position: absolute;
+            line-height: 100%;
+        }
+        .basic-info{
+            margin-left: 55%;
+            margin-top: 450px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            position: relative;
+
+            /* Den här texten lägger sig över den meny som kommer ut när man klickar på hamburgermenyn i mobilläge men nu ger jag upp */ 
+        }
+        .arrow{
+            display: block;
+            margin-left: 68%;
+        }
+
+        .arrow-sm{
+            display: none;
+        }
+      }
+
+      .flexbox{
+          display: flex;
+          height: 100vh;
+      }
+
+      .about-me{
+        flex: 1;
+        h3{
+            margin-left: 30%;
+        }
+        p{
+            width: 80%;
+            margin-left: 30%;
+            line-height: 170%;
+        }
+      }
+
+      .picture{
+        flex: 1;
+        margin-top: 350px; 
+        margin-left: 30%;
+      }
+
+      .flexbox-2{
+        display: flex;
+        height: 100vh;
+        margin-top: 100px;
+      }
+
+      .experience{
+          margin-left: 11%;
+          flex: 1;
+          line-height: 140%;
+      }
+
+      .hkr{
+          padding-top: 50px;
+      }
+
+      .skills-1{
+          flex: 1;
+      }
+
+      .skills-2{
+          flex: 1;
+      }
+
+      .skills-1, .skills-2{
+        margin-top: -9px;
+        font-size: 0.8rem;
+        list-style: none; 
+        padding-right: 50%;
+        line-height: 110%;
+        padding-top: 10px;
+    }
+
+    .skills-progress{
+        flex: 1;
+        margin-top: 158px;
+        margin-left: 18%;
+    }
+
+    .languages{
+        line-height: 50%;
+        padding-right: 50%;
+    }
+
+    .contact {
+       h2{
+           text-transform: uppercase;
+           font-size: 4rem;
+           margin-left: 11%;
+       }
+       .phone, .email {
+           list-style: none;
+           font-size: 1rem;
+           margin-bottom: 20px;
+       }
+       .phone{
+           margin-left: 8.5%;
+       }
+       .email{
+           margin-left: 8.5%;  
+       }
+       .phone-title, .email-title{
+           text-decoration: underline;
+           font-weight: bold;
+       }
+    }
+
+    .footer{
+        padding-top: 60px;
+    }
+
+    .footer-icons{
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        list-style: none;
+        column-gap: 20px;
+        a{
+            color: black;
+        }
+
+        a:hover{
+            color: grey;
+        }
+    }
+      
+      
+
+
+    }
+
+
+
+
+
+
+
