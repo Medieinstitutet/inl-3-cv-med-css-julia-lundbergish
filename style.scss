@@ -135,7 +135,13 @@ body {
           font-size: 0.9rem;
           line-height: 140%;
       }
+  }
 
+  .pic-me{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
   }
 
   /* Experience */
@@ -199,6 +205,10 @@ body {
         margin-right: 6px;
     }
 
+    .skills-progress{
+        margin-left: 6%;
+    }
+
     .progressbar-ux{
         p{ 
             font-size: 0.9rem; 
@@ -243,7 +253,47 @@ body {
         }
     }
 
-  @media screen and (max-width: 750px) {
+    .contact {
+        h2{
+            text-transform: uppercase;
+            font-size: 2rem;
+            margin-left: 11%;
+            margin-top: 60px;
+        }
+        .phone, .email {
+            list-style: none;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+        .phone{
+            margin-left: 8.5%;
+        }
+        .email{
+            margin-left: 8.5%;  
+        }
+        .phone-title, .email-title{
+            text-decoration: underline;
+            font-weight: bold;
+        }
+     }
+
+     .footer{
+        padding-top: 60px;
+    }
+
+    .footer-icons{
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        list-style: none;
+        column-gap: 20px;
+        a{
+            color: black;
+        }
+    }
+
+
+  @media screen and (max-width: 1024px) {
     .main-menu {
       display: none;
     }
@@ -251,6 +301,12 @@ body {
       display: inline;
     }
   }
+
+  @media screen and (min-width: 580px) {
+    .first-page .basic-info{
+        margin-top: -50px;
+    }
+}
 
   /* Styling för webb */ 
 
@@ -300,6 +356,7 @@ body {
 
       .first-page{
         margin-top: -270px;
+        max-width: 1600px;
         h1{
             font-size: 10rem;
             margin-left: 12%;
@@ -324,11 +381,11 @@ body {
       .about-me{
         flex: 1;
         h3{
-            margin-left: 24%;
+            margin-left: 30%;
         }
         p{
             width: 80%;
-            margin-left: 24%;
+            margin-left: 30%;
             line-height: 170%;
         }
       }
@@ -346,7 +403,7 @@ body {
       }
 
       .experience{
-          margin-left: 9%;
+          margin-left: 11%;
           flex: 1;
           line-height: 140%;
       }
@@ -375,6 +432,7 @@ body {
     .skills-progress{
         flex: 1;
         margin-top: 158px;
+        margin-left: 18%;
     }
 
     .languages{
@@ -382,8 +440,31 @@ body {
         padding-right: 50%;
     }
 
+    .contact {
+       h2{
+           text-transform: uppercase;
+           font-size: 4rem;
+           margin-left: 11%;
+       }
+       .phone, .email {
+           list-style: none;
+           font-size: 1rem;
+           margin-bottom: 20px;
+       }
+       .phone{
+           margin-left: 8.5%;
+       }
+       .email{
+           margin-left: 8.5%;  
+       }
+       .phone-title, .email-title{
+           text-decoration: underline;
+           font-weight: bold;
+       }
+    }
+
     .footer{
-        
+        padding-top: 60px;
     }
 
     .footer-icons{
@@ -399,14 +480,6 @@ body {
         a:hover{
             color: grey;
         }
-    }
-
-    .contact {
-        width: 500px;
-        background-color: lightgray;
-        margin-inline: auto 0;
-        margin-top: -100px;
-        position: absolute;
     }
       
       

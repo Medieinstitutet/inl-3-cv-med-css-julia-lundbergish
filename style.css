@@ -135,6 +135,13 @@ body {
   line-height: 140%;
 }
 
+.pic-me {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
 /* Experience */
 .experience {
   margin-top: 100px;
@@ -204,6 +211,10 @@ body {
   margin-right: 6px;
 }
 
+.skills-progress {
+  margin-left: 6%;
+}
+
 .progressbar-ux {
   accent-color: #454545;
 }
@@ -256,12 +267,67 @@ body {
   font-weight: bold;
 }
 
-@media screen and (max-width: 750px) {
+.contact h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-left: 11%;
+  margin-top: 60px;
+}
+
+.contact .phone, .contact .email {
+  list-style: none;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.contact .phone {
+  margin-left: 8.5%;
+}
+
+.contact .email {
+  margin-left: 8.5%;
+}
+
+.contact .phone-title, .contact .email-title {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.footer {
+  padding-top: 60px;
+}
+
+.footer-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.footer-icons a {
+  color: black;
+}
+
+@media screen and (max-width: 1024px) {
   .main-menu {
     display: none;
   }
   #hamburger-menu {
     display: inline;
+  }
+}
+
+@media screen and (min-width: 580px) {
+  .first-page .basic-info {
+    margin-top: -50px;
   }
 }
 
@@ -313,6 +379,7 @@ body {
   }
   .first-page {
     margin-top: -270px;
+    max-width: 1600px;
   }
   .first-page h1 {
     font-size: 10rem;
@@ -340,11 +407,11 @@ body {
             flex: 1;
   }
   .about-me h3 {
-    margin-left: 24%;
+    margin-left: 30%;
   }
   .about-me p {
     width: 80%;
-    margin-left: 24%;
+    margin-left: 30%;
     line-height: 170%;
   }
   .picture {
@@ -362,7 +429,7 @@ body {
     margin-top: 100px;
   }
   .experience {
-    margin-left: 9%;
+    margin-left: 11%;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -394,10 +461,34 @@ body {
         -ms-flex: 1;
             flex: 1;
     margin-top: 158px;
+    margin-left: 18%;
   }
   .languages {
     line-height: 50%;
     padding-right: 50%;
+  }
+  .contact h2 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-left: 11%;
+  }
+  .contact .phone, .contact .email {
+    list-style: none;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  .contact .phone {
+    margin-left: 8.5%;
+  }
+  .contact .email {
+    margin-left: 8.5%;
+  }
+  .contact .phone-title, .contact .email-title {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  .footer {
+    padding-top: 60px;
   }
   .footer-icons {
     display: -webkit-box;
@@ -418,13 +509,6 @@ body {
   }
   .footer-icons a:hover {
     color: grey;
-  }
-  .contact {
-    width: 500px;
-    background-color: lightgray;
-    margin-inline: auto 0;
-    margin-top: -100px;
-    position: absolute;
   }
 }
 /*# sourceMappingURL=style.css.map */
