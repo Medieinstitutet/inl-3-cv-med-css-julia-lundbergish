@@ -102,7 +102,7 @@ body {
      opacity: 0.4;
   }
 
-  /* Önskvärt i tillgänglighet vore om det var en tydlig knapp för att stänga hamburgermenyn, just nu är det inte riktigt begripligt */ 
+  /* Önskvärt i tillgänglighet vore om det var en tydlig knapp för att stänga hamburgermenyn, just nu är det inte riktigt begripligt eftersom man klickar på texten "menu" */ 
 
   /* First page content */
 
@@ -380,6 +380,8 @@ body {
             font-size: 1.1rem;
             text-transform: uppercase;
             position: relative;
+
+            /* Den här texten lägger sig över den meny som kommer ut när man klickar på hamburgermenyn i mobilläge men nu ger jag upp */ 
         }
         .arrow{
             display: block;
