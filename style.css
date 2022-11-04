@@ -98,9 +98,11 @@ body {
   opacity: 0.4;
 }
 
+/* Önskvärt i tillgänglighet vore om det var en tydlig knapp för att stänga hamburgermenyn, just nu är det inte riktigt begripligt */
 /* First page content */
 .first-page {
   padding-top: 200px;
+  max-width: 600px;
 }
 
 .first-page h1 {
@@ -115,6 +117,15 @@ body {
   font-size: 0.9rem;
   text-transform: uppercase;
   position: relative;
+}
+
+.first-page .arrow {
+  display: none;
+}
+
+.first-page .arrow-sm {
+  margin-left: 68%;
+  margin-top: 10px;
 }
 
 /* About me */
@@ -394,6 +405,13 @@ body {
     font-size: 1.1rem;
     text-transform: uppercase;
     position: relative;
+  }
+  .first-page .arrow {
+    display: block;
+    margin-left: 68%;
+  }
+  .first-page .arrow-sm {
+    display: none;
   }
   .flexbox {
     display: -webkit-box;

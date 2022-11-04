@@ -19,7 +19,7 @@
 
 <body>
 
-    <nav class="main-menu">
+    <nav class="main-menu" tabindex="0">
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#experiences">Experience</a></li>
@@ -37,12 +37,14 @@
             </ul>
         </nav>
     </label>
+    <!-- Label borde inte omsluta navigationen ovan men jag har insett det lite sent -->
     <div class="overlay"></div>
     <main>
         <section class="first-page">
             <h1>Julia <br> Lundberg</h1>
             <p class="basic-info">Digital Designer & Developer <br> from Västerås.</p>
-            <img src="" alt="downward pointing arrow">
+            <img class="arrow" src="images/arrow.png" alt="downward pointing arrow" height="125" width="126">
+            <img class="arrow-sm" src="images/arrow-sm.png" alt="downward pointing arrow" height="60" width="60">
         </section>
         <div class="flexbox">
             <section class="about-me">
@@ -61,7 +63,7 @@
                 </p>
             </section>
             <aside class="picture">
-                <img class="pic-me" src="images/me.jpg" alt="girl with long hair and black shirt smiling" width="300px"
+                <img class="pic-me" src="images/me.jpg" alt="girl with long hair and black shirt smiling" width="300"
                     height="400">
             </aside>
         </div>
@@ -120,9 +122,6 @@
                 </ul>
             </aside>
         </div>
-        </div>
-        </section>
-        </div>
         <div class="contact">
             <a name="contact"></a>
             <h2>Let's get <br> in touch</h2>
@@ -143,11 +142,11 @@
     <!--Footer-->
     <footer class="footer">
         <ul class="footer-icons">
-            <li><a href="https://github.com/julia-lundbergish"><i class="fa-brands fa-github"
+            <li><a href="https://github.com/julia-lundbergish" title="my GitHub page"><i class="fa-brands fa-github"
                         aria-hidden="true"></i></a></li>
-            <li><a href="https://www.instagram.com/julialundbergish/"><i class="fa-brands fa-instagram"
+            <li><a href="https://www.instagram.com/julialundbergish/" title="my Instagram page"><i class="fa-brands fa-instagram"
                         aria-hidden="true"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/julialundbergish/"><i class="fa-brands fa-linkedin"
+            <li><a href="https://www.linkedin.com/in/julialundbergish/" title="my LinkedIn page"><i class="fa-brands fa-linkedin"
                         aria-hidden="true"></i></a></li>
         </ul>
     </footer>
